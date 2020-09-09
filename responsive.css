@@ -1,0 +1,40 @@
+/* ukuran tablet */
+
+@media screen and (max-width: 768px){
+	nav ul{
+		width: 50%;
+	}
+	
+}
+
+/* ukuran mobile	*/
+@media screen and (max-width: 576px){
+	.menu-toggle {
+		display: flex;
+	}
+	nav ul{
+
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 70%;
+		height: 100vh;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		padding-top: 10px;
+		background-color: rgb(46, 48, 199);
+		transition: all 1s;
+		z-index: -1;
+		transform: translateX(100%);
+		opacity: 0;
+		
+		
+	}
+	nav ul.slide {
+
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+}
