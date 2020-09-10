@@ -1,21 +1,22 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 }
 
-body{
+body {
 	font-family: 'Montserrat', sans-serif;
 	overflow-x: hidden;
 }
 
 nav {
 	display: flex;
-	background-color:  rgb(46, 48, 199);
+	background-color: rgb(46, 48, 199);
 	justify-content: space-around;
 	height: 50px;
 	color: rgb(176, 177, 255);
 	align-items: center;
 }
+
 .logo {
 	font-family: 'Lobster', cursive;
 
@@ -25,23 +26,23 @@ nav {
 nav ul {
 	display: flex;
 	list-style: none;
-	width: 40%; 
+	width: 40%;
 	justify-content: space-between;
 }
 
-nav ul li a{
+nav ul li a {
 	color: rgb(176, 177, 255);
 	text-decoration: none;
 	font-size: 0.8em;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
 	color: white;
 }
 
 /* hamburgen menu*/
 
-.menu-toggle{
+.menu-toggle {
 	display: none;
 	flex-direction: column;
 	height: 20px;
@@ -51,7 +52,7 @@ nav ul li a:hover{
 }
 
 
-.menu-toggle input{
+.menu-toggle input {
 	position: absolute;
 	width: 40px;
 	height: 28px;
@@ -71,27 +72,45 @@ nav ul li a:hover{
 }
 
 
-          /* animasi span*/
+/* animasi span*/
 
 
-.menu-toggle span:nth-child(2){
+.menu-toggle span:nth-child(2) {
 	transform-origin: 0 0;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2){
-	transform: rotate(45deg) translate(-1px, -1px) ;
+.menu-toggle input:checked~span:nth-child(2) {
+	transform: rotate(45deg) translate(-1px, -1px);
 }
 
-.menu-toggle span:nth-child(4){
+.menu-toggle span:nth-child(4) {
 	transform-origin: 0 100%;
-	
+
 }
 
-.menu-toggle input:checked ~ span:nth-child(4){
+.menu-toggle input:checked~span:nth-child(4) {
 	transform: rotate(-45deg) translate(-1px, 0);
 }
 
-.menu-toggle input:checked ~ span:nth-child(3){
+.menu-toggle input:checked~span:nth-child(3) {
 	opacity: 0;
 	transform: scale(0);
+}
+
+/*  Footer Style  */
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	height: 60px;
+	background-color: rgb(46, 48, 199);
+	color: rgb(176, 177, 255);
+}
+
+.footer-logo {
+	font-family: 'Lobster', cursive;
+	font-size: 26px;
+	letter-spacing: 4px;
 }
